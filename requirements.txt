@@ -1,0 +1,9 @@
+# Core requirements for Movie Recommender System
+streamlit>=1.20.0
+pandas>=1.3.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+torch>=1.9.0
+tez>=0.6.6
+lightfm>=1.16
+pickle-mixin>=1.0.2
