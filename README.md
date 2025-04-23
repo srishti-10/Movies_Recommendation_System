@@ -41,6 +41,33 @@ The following datasets are used (all should be placed in the `datasets/` directo
    pip install -r requirements.txt
    ```
 
+## Deployment on Streamlit Community Cloud
+To deploy this app directly from your GitHub repo:
+
+1. Ensure the following files are present in your repo (already included):
+   - `.streamlit/config.toml` (sets Python version to 3.10 for compatibility)
+   - `runtime.txt` (alternative way to specify Python version)
+   - `packages.txt` (installs system dependencies required for LightFM)
+   - `requirements.txt` (lists all Python dependencies)
+2. Push your code to a public GitHub repository.
+3. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud) and sign in with GitHub.
+4. Click "New app", select your repo, branch, and set `app.py` as the main file.
+5. Click "Deploy". The app will build and launch with a public URL.
+
+**Note:**
+- Do not include large dataset CSVs in the repo. Users should download them as described in the README.
+- The files `.streamlit/config.toml`, `runtime.txt`, and `packages.txt` are for deployment only and do not affect local development.
+
+1. Clone the repository:
+   ```bash
+   git clone <repo_url>
+   cd Recommender_System-main
+   ```
+2. Install dependencies (recommended: use a virtual environment):
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 ## How to Run
 
 ### 1. Streamlit Web App
